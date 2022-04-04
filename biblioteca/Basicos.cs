@@ -283,6 +283,56 @@ namespace Basicos
             return s.ToUpper();
         }
 
+        //Ejercicio 25
+        public string CopiarNVeces(string s, int n)
+        {
+            string aux="";
+            for (int i = 0; i < n; i++)
+            {
+                aux=aux+s;
+            }
+            return aux;
+        }
+
+        //ejercicio 26
+
+        public string CopiaDeTresCaracteres(string s, int n)
+        {
+            
+            string StringResult="";
+            if (s.Length<4)
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    StringResult=StringResult+s;
+                }
+                return StringResult;
+            }    
+            string FirstThreeChar=s.Substring(0,3);
+            for (int i = 0; i < n; i++)
+            {
+                StringResult=StringResult+FirstThreeChar;                
+            }
+                return StringResult;
+
+        }
+
+        //ejercicio 27
+        public int DobleAA(string s)
+        {
+            int conteo=0;
+            string aa="";
+            for (int i = 0; i < s.Length-1; i++)
+            {
+                aa=s.Substring(i,2);               
+                if (aa=="aa")
+                {
+                    conteo++;
+                }
+            }
+            return conteo;
+        }
+
 
     }
 
