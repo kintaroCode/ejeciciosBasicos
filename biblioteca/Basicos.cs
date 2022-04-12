@@ -410,6 +410,70 @@ namespace Basicos
 
         }
 
+        //ejercicio 38
+        public int NumberOfNumbers(int[] a)
+        {
+            int count=0;
+            foreach (var item in a)
+            {
+                if (item ==5||item==6)
+                {
+                    count++;
+                }
+            }
+            count =count/2;
+            return count;
+        }
+
+        //ejercicio 39
+        public bool TripleCaraters(int[] a)
+        {
+            for (int i = 0; i < a.Length-2; i++)
+            {
+                if (a[i] == a[i+1] && a[i] == a[i+2])
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        //ejercicio 40
+        public int ReturnThirty(int a, int b)
+        {
+            if (a+b <= 20 && a+b >= 10)
+            {
+                return 30;
+            }
+
+            return a+b;
+        }
+
+        //ejercicio 41
+        public bool ReturnNumbersFive(int a, int b)
+        {
+            if (a+b == 5 || b == 5 || a == 5)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        //ejercicio 42
+        public bool ReturnMultipleThirteen(int a)
+        {
+
+            if (a % 13 == 0 || (a-1) % 13 == 0)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+
 
     }
 

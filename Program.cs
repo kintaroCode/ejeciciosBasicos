@@ -9,21 +9,28 @@ namespace exercises
         static void Main(string[] args)
         {                   
             OperacionesBasicas Op=new OperacionesBasicas();               
-            UsodeDirec direc= new UsodeDirec();
-
-            System.Console.WriteLine(Op.LetraSiLetraNo("Python"));
-            System.Console.WriteLine(Op.LetraSiLetraNo("PHP"));
-            System.Console.WriteLine(Op.LetraSiLetraNo("JS"));
-            System.Console.WriteLine();
-            System.Console.WriteLine(Op.Aleatoria("abcd"));
-            System.Console.WriteLine(Op.Aleatoria("aec"));
-            System.Console.WriteLine(Op.Aleatoria("isrrael"));
-            System.Console.WriteLine();
-            System.Console.WriteLine(Op.WordWithLetters("javascript"));
-            System.Console.WriteLine(Op.WordWithLetters("Python"));
-            System.Console.WriteLine(Op.WordWithLetters("html"));
-
             
+
+           
+            System.Console.WriteLine(Op.TripleCaraters(new int[]{1,1,2,2,1}));
+            System.Console.WriteLine(Op.TripleCaraters(new int[]{1,1,2,1,3}));
+            System.Console.WriteLine(Op.TripleCaraters(new int[]{1,1,1,2,2,2,1}));
+
+            System.Console.WriteLine();
+            System.Console.WriteLine(Op.ReturnThirty(2,17));
+            System.Console.WriteLine(Op.ReturnThirty(17,12));
+            System.Console.WriteLine(Op.ReturnThirty(22,17));
+            System.Console.WriteLine(Op.ReturnThirty(20,0));
+            System.Console.WriteLine();
+            System.Console.WriteLine(Op.ReturnNumbersFive(1,4));
+            System.Console.WriteLine(Op.ReturnNumbersFive(4,5));
+            System.Console.WriteLine(Op.ReturnNumbersFive(3,4));
+            System.Console.WriteLine();
+            System.Console.WriteLine(Op.ReturnMultipleThirteen(13));
+            System.Console.WriteLine(Op.ReturnMultipleThirteen(14));
+            System.Console.WriteLine(Op.ReturnMultipleThirteen(27));
+            System.Console.WriteLine(Op.ReturnMultipleThirteen(41));
+
 
         }   
 
