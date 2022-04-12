@@ -333,6 +333,83 @@ namespace Basicos
             return conteo;
         }
 
+        //ejercicio 28 desde youtube
+        public void leerArchivo()
+        {
+            string FileName;
+            String DestFile;
+            
+
+            string TargetPath=@"C:\Users\SAP\Desktop\PruebaDirectorio";
+            string SourcePath=@"C:\Users\SAP\Desktop\lecturas para el baño";
+            if (Directory.Exists(SourcePath))
+            {
+                string[] Files= System.IO.Directory.GetFiles(SourcePath);
+                foreach (var s in Files)
+                {
+                    System.Console.WriteLine(s);
+                    FileName=System.IO.Path.GetFileName(s);
+                    DestFile=System.IO.Path.Combine(TargetPath,s);
+                    System.IO.File.Copy(s, DestFile, true);
+                }     
+                
+            }else
+            {
+                System.Console.WriteLine("Source Path does not exist");
+            }
+
+            System.Console.WriteLine("press any button to finish");
+            System.Console.ReadKey();
+
+            
+        }
+
+        //ejercicio 29
+        public string LetraSiLetraNo(string s)
+        {
+            string palabraHecha="";
+
+            for (int i = 0; i < s.Length; i++)
+            {
+                if ((i+2)%2==0)
+                {
+                    palabraHecha=palabraHecha+s[i];
+                }
+            }
+            return palabraHecha;
+        }
+
+        // ejercicio 30
+
+        public string Aleatoria(string s)
+        {
+            Random rdm=new Random();
+            int indiceAux;
+            string PalabraAleatoria="";
+            
+            for (int i = 0; i < s.Length*2; i++)
+            {
+                indiceAux= rdm.Next(s.Length);
+                PalabraAleatoria=PalabraAleatoria+s[indiceAux];
+            }
+            return PalabraAleatoria;
+        }
+
+        //ejercicio 37
+
+        public string WordWithLetters(string s)
+        {
+            string newWord="";            
+
+            for (int i = 0; i < s.Length; i = i+4)
+            {
+                newWord=newWord+s[i]+s[i+1];
+            }
+
+            return newWord;
+
+        }
+
 
     }
 

@@ -1,5 +1,6 @@
 ﻿using Basicos;
 using System;
+using UsoDirectory;
 namespace exercises
 {
      class Program
@@ -8,27 +9,22 @@ namespace exercises
         static void Main(string[] args)
         {                   
             OperacionesBasicas Op=new OperacionesBasicas();               
-            
-            System.Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-            System.Console.WriteLine(Op.ElNumeroMayor(1,2,3));
-            System.Console.WriteLine(Op.ElNumeroMayor(1,3,2));
-            System.Console.WriteLine(Op.ElNumeroMayor(56,57,58));
-            System.Console.WriteLine(Op.ElNumeroMayor(1,2,2));
-            System.Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            UsodeDirec direc= new UsodeDirec();
 
-           Console.WriteLine(Op.CopiarNVeces("JS",2));
-           Console.WriteLine(Op.CopiarNVeces("JS",3));
-           Console.WriteLine(Op.CopiarNVeces("JS",1));
-                
-            Console.WriteLine();
-
-            System.Console.WriteLine(Op.CopiaDeTresCaracteres("Python", 2));
-            System.Console.WriteLine(Op.CopiaDeTresCaracteres("Python", 3));
-            System.Console.WriteLine(Op.CopiaDeTresCaracteres("JS", 3));
+            System.Console.WriteLine(Op.LetraSiLetraNo("Python"));
+            System.Console.WriteLine(Op.LetraSiLetraNo("PHP"));
+            System.Console.WriteLine(Op.LetraSiLetraNo("JS"));
             System.Console.WriteLine();
-            System.Console.WriteLine(Op.DobleAA("bbaaccaag"));
-            System.Console.WriteLine(Op.DobleAA("jjkiaaaseaaw"));
-            System.Console.WriteLine(Op.DobleAA("JSaaakoiaa"));
+            System.Console.WriteLine(Op.Aleatoria("abcd"));
+            System.Console.WriteLine(Op.Aleatoria("aec"));
+            System.Console.WriteLine(Op.Aleatoria("isrrael"));
+            System.Console.WriteLine();
+            System.Console.WriteLine(Op.WordWithLetters("javascript"));
+            System.Console.WriteLine(Op.WordWithLetters("Python"));
+            System.Console.WriteLine(Op.WordWithLetters("html"));
+
+            
+
         }   
 
 
