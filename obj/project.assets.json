@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SAP\\consoleApp\\consoleApp.csproj",
+      "projectUniqueName": "C:\\Users\\SAP\\consoleapp\\consoleApp.csproj",
       "projectName": "consoleApp",
-      "projectPath": "C:\\Users\\SAP\\consoleApp\\consoleApp.csproj",
+      "projectPath": "C:\\Users\\SAP\\consoleapp\\consoleApp.csproj",
       "packagesPath": "C:\\Users\\SAP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SAP\\consoleApp\\obj\\",
+      "outputPath": "C:\\Users\\SAP\\consoleapp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SAP\\AppData\\Roaming\\NuGet\\NuGet.Config"

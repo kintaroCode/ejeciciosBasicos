@@ -1,33 +1,36 @@
 ﻿using Basicos;
 using System;
+using UsoDirectory;
 namespace exercises
 {
      class Program
     {
+        
         static void Main(string[] args)
-        {
-            OperacionesBasicas Op=new OperacionesBasicas();
-            Console.WriteLine(Op.suma(6,6));
-            System.Console.WriteLine(Op.DiferenciaAmboluta(53));
-            System.Console.WriteLine(Op.DiferenciaAmboluta(30));
-            System.Console.WriteLine(Op.DiferenciaAmboluta(51));
+        {                   
+            OperacionesBasicas Op=new OperacionesBasicas();               
             
-            System.Console.WriteLine(Op.EsTreinta(30,0));
-            System.Console.WriteLine(Op.EsTreinta(25,5));
-            System.Console.WriteLine(Op.EsTreinta(20,30));
-            System.Console.WriteLine(Op.EsTreinta(25,20));
 
-            System.Console.WriteLine(Op.AgregarIf("if else"));
-            System.Console.WriteLine(Op.AgregarIf("else"));
-            System.Console.WriteLine(Op.AgregarIf("arroz"));
-            System.Console.WriteLine(Op.AgregarIf("ifigenia"));
+           
+            System.Console.WriteLine(Op.TripleCaraters(new int[]{1,1,2,2,1}));
+            System.Console.WriteLine(Op.TripleCaraters(new int[]{1,1,2,1,3}));
+            System.Console.WriteLine(Op.TripleCaraters(new int[]{1,1,1,2,2,2,1}));
 
+            System.Console.WriteLine();
+            System.Console.WriteLine(Op.ReturnThirty(2,17));
+            System.Console.WriteLine(Op.ReturnThirty(17,12));
+            System.Console.WriteLine(Op.ReturnThirty(22,17));
+            System.Console.WriteLine(Op.ReturnThirty(20,0));
+            System.Console.WriteLine();
+            System.Console.WriteLine(Op.ReturnNumbersFive(1,4));
+            System.Console.WriteLine(Op.ReturnNumbersFive(4,5));
+            System.Console.WriteLine(Op.ReturnNumbersFive(3,4));
+            System.Console.WriteLine();
+            System.Console.WriteLine(Op.ReturnMultipleThirteen(13));
+            System.Console.WriteLine(Op.ReturnMultipleThirteen(14));
+            System.Console.WriteLine(Op.ReturnMultipleThirteen(27));
+            System.Console.WriteLine(Op.ReturnMultipleThirteen(41));
 
-            System.Console.WriteLine(Op.RemoverCaracter("python",1));
-            System.Console.WriteLine(Op.RemoverCaracter("python",0));
-            System.Console.WriteLine(Op.RemoverCaracter("python",4));
-
-            System.Console.WriteLine(Op.CambiarPrimeraYUltimaLetra("arroz"));
 
         }   
 
